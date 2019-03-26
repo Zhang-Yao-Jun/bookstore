@@ -73,6 +73,24 @@ public class BookDaoImpl implements BookDao {
         return null;
     }
 
+    @Override
+    public List<Book> findNewBook() {
+        String sql = "";
+        return getBookList(sql);
+    }
+
+    @Override
+    public List<Book> findDisBook() {
+        String sql = "";
+        return getBookList(sql);
+    }
+
+    @Override
+    public List<Book> findHotBook() {
+        String sql = "";
+        return getBookList(sql);
+    }
+
     //添加
     @Override
     public int add() {
